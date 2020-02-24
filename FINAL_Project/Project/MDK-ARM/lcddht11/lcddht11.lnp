@@ -1,0 +1,27 @@
+--cpu Cortex-M3
+"lcddht11\startup_stm32f103xb.o"
+"lcddht11\dwt_stm32_delay.o"
+"lcddht11\i2c-lcd.o"
+"lcddht11\main.o"
+"lcddht11\stm32f1xx_it.o"
+"lcddht11\stm32f1xx_hal_msp.o"
+"lcddht11\stm32f1xx_hal_gpio_ex.o"
+"lcddht11\stm32f1xx_hal_i2c.o"
+"lcddht11\stm32f1xx_hal_tim.o"
+"lcddht11\stm32f1xx_hal_tim_ex.o"
+"lcddht11\stm32f1xx_hal_uart.o"
+"lcddht11\stm32f1xx_hal.o"
+"lcddht11\stm32f1xx_hal_rcc.o"
+"lcddht11\stm32f1xx_hal_rcc_ex.o"
+"lcddht11\stm32f1xx_hal_gpio.o"
+"lcddht11\stm32f1xx_hal_dma.o"
+"lcddht11\stm32f1xx_hal_cortex.o"
+"lcddht11\stm32f1xx_hal_pwr.o"
+"lcddht11\stm32f1xx_hal_flash.o"
+"lcddht11\stm32f1xx_hal_flash_ex.o"
+"lcddht11\stm32f1xx_hal_exti.o"
+"lcddht11\system_stm32f1xx.o"
+--library_type=microlib --strict --scatter "lcddht11\lcddht11.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "lcddht11.map" -o lcddht11\lcddht11.axf
